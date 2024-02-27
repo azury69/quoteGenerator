@@ -10,58 +10,52 @@
 <!-- top container -->
 <div class="wrapper">
 
-    <header>Quote Generator</header>
+    <header>Quote for the day</header>
 
     <div id="categories">
         <div class="dropdown">
             <button class="dropbtn"><h1> categories </h1></button>
             <div class="dropdown-content">
-            <a href="./index.html">Motivational</a>
-            <a href="./categoryLove.html">Love</a>
-            <a href="./categoryMovie.html">Movie</a>
+                <a href="./index.html">Motivational</a>
+                <a href="./categoryLove.html">Love</a>
+                <a href="./categoryMovie.html">Movie</a>
             </div>
         </div>
     </div>
 
-
     <div class="center">
-    
-    <h3 class="quote">Quote</h3>
-    
-    <div id="quote">
-        <p>Click to generate a random quote.</p>
+        <div id="quote">
+            <p>Click to generate a random quote.</p>
+        </div>
     </div>
-    
+
     <!-- bottom container -->
 
     <div class="bottomcontainer">
         <div class="features">
+            <!-- Buttons for previous and next -->
+            <button onclick="Prev();" class="button">Previous</button>
+            <button onclick="Next();" class="button">Next</button>
 
-    <!-- changing font sizes -->
-    <div>
-    <span id="increase" style="font-size: 1em"> | + | </span>
-    <span id="decrease" style="font-size: 1em"> | - | </span>
-    </div>
-    
-    <button id="generateButton">Generate Random Quote</button>
+            <!-- Button to generate random quote -->
+            <button class="button" id="generateButton">Generate Random Quote</button>
 
-    <div>
-        <button onclick="Prev();">Previous</button>
-        <button onclick="Next();">Next!</button>
-    </div>
-    <!-- dark mode  -->
-    <div class="darkmode">
-        <button onclick="darkMode()">Darkmode</button>
-    </div>
+            <!-- Buttons to increase/decrease font size -->
+            <div>
+                <button class="button" id="increase">Increase Font Size</button>
+                <button class="button" id="decrease">Decrease Font Size</button>
+            </div>
 
+            <!-- Dark mode toggle button -->
+            <div class="darkmode">
+                <button class="button" onclick="darkMode()">Dark Mode</button>
+            </div>
+        </div>
     </div>
 </div>
 
-
-</div>
-</div>
+<script src="./categoryLove.js"></script>
 
 
-    <script src="./categoryLove.js"></script>
 </body>
 </html>
