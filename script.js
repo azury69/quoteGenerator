@@ -44,24 +44,22 @@ function Next(){
     }
 
     
-//increase or decrease font size
-let currentFontSize = 16; // this sets the current font size
-//function to zoom in
+// Increase font size function
 document.getElementById("increase").addEventListener("click", function() {
-
-let newFontSize = currentFontSize + 2;
-
-document.getElementById("quote").style.fontSize = newFontSize + "px"; 
-currentFontSize = newFontSize; 
+    let currentFontSize = parseFloat(window.getComputedStyle(document.getElementById("quote")).fontSize);
+    let newFontSize = currentFontSize + 2;
+    document.getElementById("quote").style.fontSize = newFontSize + "px"; 
 });
-// function to zoom out
+
+// Decrease font size function
 document.getElementById("decrease").addEventListener("click", function() {
-
-let newFontSize = currentFontSize - 2;
-
-document.getElementById("quote").style.fontSize = newFontSize + "px";
-currentFontSize = newFontSize; 
+    let currentFontSize = parseFloat(window.getComputedStyle(document.getElementById("quote")).fontSize);
+    let newFontSize = currentFontSize - 2;
+    if (newFontSize >= 8) { // Ensuring font size doesn't become too small
+        document.getElementById("quote").style.fontSize = newFontSize + "px";
+    }
 });
+
 
 //dark mode
 
