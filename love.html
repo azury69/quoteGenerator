@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- top container -->
+<div class="wrapper">
+
+    <header>Quote Generator</header>
+
+    <div id="categories">
+        <div class="dropdown">
+            <button class="dropbtn"><h1> categories </h1></button>
+            <div class="dropdown-content">
+            <a href="./index.html">Motivational</a>
+            <a href="./love.html">Love</a>
+            <a href="./movie.html">Movie</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="center">
+    
+    <h3 class="quote">Quote</h3>
+    
+    <div id="quote">
+        <p>Click to generate a random quote.</p>
+    </div>
+    
+    <!-- bottom container -->
+
+    <div class="bottomcontainer">
+        <div class="features">
+
+    <!-- changing font sizes -->
+    <div>
+    <span id="increase" style="font-size: 1em"> | + | </span>
+    <span id="decrease" style="font-size: 1em"> | - | </span>
+    </div>
+    
+    <button id="generateButton">Generate Random Quote</button>
+
+    <div>
+        <button onclick="Prev();">Previous</button>
+        <button onclick="Next();">Next!</button>
+    </div>
+    <!-- dark mode  -->
+    <div class="darkmode">
+        <button onclick="darkMode()">Darkmode</button>
+    </div>
+
+    </div>
+</div>
+
+
+</div>
+</div>
+
+
+    <script src="./love.js"></script>
+</body>
+</html>
